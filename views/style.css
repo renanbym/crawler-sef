@@ -11,20 +11,22 @@ html{
 
 #title{
     text-align: center;
-    width: 900px;
+    width: 75%;
     position: absolute;
-    top: 50px;
+    top: 20px;
     font-size: 20px;
 }
 
 #container{
-    border: solid 1px #ccc;
-    width: 900px;
+    width: 75%;
     min-height: 200px;
     height: auto;
-    margin: 100px 20px;
     display: inline-block;
-    vertical-align: top;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    margin: auto;
+    left: 10px;
 }
 
 #container img{
@@ -55,6 +57,10 @@ ul li {
     padding-bottom: 20px;
     border-bottom: solid 1px #ccc;
 
+}
+
+ul li p{
+    margin: 10px 0;
 }
 
 img{
