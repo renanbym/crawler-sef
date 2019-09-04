@@ -1,0 +1,16 @@
+html
+  head
+    title= title
+    style
+      include style.css
+    
+  body
+    div#container
+    ul
+      each val in files
+        li
+          p= val
+          img(src= val)
+
+    script
+      include script.js
