@@ -1,5 +1,6 @@
 const openPage = require('./openPage')
 const logger = require('./logger')
+const moment = require('moment');
 
 module.exports = async (browser, email, password) => {
     const loginUrl = 'https://www.sef.pt/pt/Pages/Homepage.aspx'
@@ -12,7 +13,7 @@ module.exports = async (browser, email, password) => {
         logger.info('login', `Selecionou ${select} - ${name}`)
 
         await page.waitFor(10000);
-        await page.screenshot({ path: `img/${select}-${name}.png` });
+        await page.screenshot({ path: `img/${select}-${name}--${moment().format('DD-MM-YYYY')}.png` });
     }
 
 

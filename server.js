@@ -25,10 +25,8 @@ app.get('/', function (req, res) {
 app.post('/apagar', function (req, res) {
 
     for (const arq of getFiles('img')) {
-        console.log(`img/${arq}`)
         fs.unlink(`img/${arq}`, function (err, res) {
-            console.log(err)
-            console.log(res)
+     
         });
     }
 
